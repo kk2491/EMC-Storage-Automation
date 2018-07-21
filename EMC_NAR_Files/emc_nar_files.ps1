@@ -62,51 +62,51 @@ if ($result -eq [System.Windows.Forms.DialogResult]::OK)
 	naviseccli -h $var4 -user username -password password -scope 0 analyzer -archive -list >> log2.txt
 
 	$date1 = Get-Date -format MM/dd/yyyy
-	Get-Content log1.txt | findstr $date1 >> Final1.txt
-	Get-Content log2.txt | findstr $date1 >> Final11.txt
+	Get-Content log1.txt | findstr $date1 >> File_1.txt
+	Get-Content log2.txt | findstr $date1 >> File_2.txt
 
 	$date2 = (Get-Date (Get-date).addDays(-1) -format MM/dd/yyyy)
-	Get-Content log1.txt | findstr $date2 >> Final1.txt
-	Get-Content log2.txt | findstr $date2 >> Final11.txt
+	Get-Content log1.txt | findstr $date2 >> File_1.txt
+	Get-Content log2.txt | findstr $date2 >> File_2.txt
 
 	$date3 = (Get-Date (Get-date).addDays(-2) -format MM/dd/yyyy)
-	Get-Content log1.txt | findstr $date3 >> Final1.txt
-	Get-Content log2.txt | findstr $date3 >> Final11.txt
+	Get-Content log1.txt | findstr $date3 >> File_1.txt
+	Get-Content log2.txt | findstr $date3 >> File_2.txt
 
 	$date4 = (Get-Date (Get-date).addDays(-3) -format MM/dd/yyyy)
-	Get-Content log1.txt | findstr $date4 >> Final1.txt
-	Get-Content log2.txt | findstr $date4 >> Final11.txt
+	Get-Content log1.txt | findstr $date4 >> File_1.txt
+	Get-Content log2.txt | findstr $date4 >> File_2.txt
 	
 	$date5 = (Get-Date (Get-date).addDays(-4) -format MM/dd/yyyy)
-	Get-Content log1.txt | findstr $date5 >> Final1.txt
-	Get-Content log2.txt | findstr $date5 >> Final11.txt
+	Get-Content log1.txt | findstr $date5 >> File_1.txt
+	Get-Content log2.txt | findstr $date5 >> File_2.txt
 	
 	$date6 = (Get-Date (Get-date).addDays(-5) -format MM/dd/yyyy)
-	Get-Content log1.txt | findstr $date6 >> Final1.txt
-	Get-Content log2.txt | findstr $date6 >> Final11.txt
+	Get-Content log1.txt | findstr $date6 >> File_1.txt
+	Get-Content log2.txt | findstr $date6 >> File_2.txt
 	
 	$date7 = (Get-Date (Get-date).addDays(-6) -format MM/dd/yyyy)
-	Get-Content log1.txt | findstr $date7 >> Final1.txt
-	Get-Content log2.txt | findstr $date7 >> Final11.txt
+	Get-Content log1.txt | findstr $date7 >> File_1.txt
+	Get-Content log2.txt | findstr $date7 >> File_2.txt
 
-	foreach ($line in Get-Content Final1.txt)
+	foreach ($line in Get-Content File_1.txt)
 	{
 		$data1 = $line.Split('', $option1)
-		echo $data1[4] >> Final2.txt
+		echo $data1[4] >> File_3.txt
 	}	
 
-	foreach ($line in Get-Content Final2.txt)	
+	foreach ($line in Get-Content File_3.txt)	
 	{
 		naviseccli -h $var3 -user username -password password -scope 0 analyzer -archiveretrieve -file $line
 	}
 
-	foreach ($line in Get-Content Final11.txt)
+	foreach ($line in Get-Content File_2.txt)
 	{
 		$data2 = $line.Split('', $option1)
-		echo $data2[4] >> Final22.txt
+		echo $data2[4] >> File_4.txt
 	}	
 
-	foreach ($line in Get-Content Final22.txt)	
+	foreach ($line in Get-Content File_4.txt)	
 	{
 		naviseccli -h $var4 -user username -password password -scope 0 analyzer -archiveretrieve -file $line
 	}
@@ -114,10 +114,10 @@ if ($result -eq [System.Windows.Forms.DialogResult]::OK)
 	Del lg.txt
 	Del log1.txt
 	Del log2.txt
-	Del Final1.txt
-	Del Final11.txt
-	Del Final2.txt
-	Del Final22.txt
+	Del File_1.txt
+	Del File_2.txt
+	Del File_3.txt
+	Del File_4.txt
 
 }
 
