@@ -1,10 +1,10 @@
-### EMC SP Collect
+## EMC SP Collect and Health Check 
 
-# Powershelll script to collect SP logs from EMC Array.
+### Powershelll script to collect SP logs from EMC Array and to perform the instant health check.
+#### This script can be used to collect the logs from EMC VNX and Clariion boxes.
 
-# This script can be used to collect the logs from EMC VNX and Clariion boxes.
 
-## The detailed procedure is given below
+### The detailed procedure is given below
 
 1.  Open the EMC_V4.exe file.
 
