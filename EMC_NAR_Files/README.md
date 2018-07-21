@@ -4,7 +4,7 @@
 
 ### Note : This would give the last 5 days NAR files for both SPA and SPB
 
-#### Prerequisites : 
+### Prerequisites : 
 Please maintain a text file with name Array.txt in the below format
 Array_Name SPA_IP_Address SPB_IP_Address in the same folder where you have NAR exe file
 
