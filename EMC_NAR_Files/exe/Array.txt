@@ -1,0 +1,8 @@
+Array_Name_1  SPA_IP  SPB_IP
+Array_Name_2  SPA_IP  SPB_IP
+Array_Name_3  SPA_IP  SPB_IP
+Array_Name_4  SPA_IP  SPB_IP
+
+
+
+Array_Name_N  SPA_IP  SPB_IP
