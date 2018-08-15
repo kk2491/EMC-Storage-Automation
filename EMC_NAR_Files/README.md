@@ -10,16 +10,16 @@ Array_Name SPA_IP_Address SPB_IP_Address in the same folder where you have NAR e
 
 ### Steps given below
 
-1.  Copy the exe folder from Github to any folder in the server from where you can access storage array using naviseccli.
+1.  Copy the exe folder from Github to any folder in the server from where you can access storage array using naviseccli.  ![](images/Image_NAR_1.png)
 
-2.  Open the EMC_NAR.exe file.
+2.  Format of Array details in Array.txt is as given below  ![](images/Image_NAR_2.png)
 
-3.  You would be prompted to enter the array name.
+3.  Open the exe file (NAR_v1.exe), this would open up a GUI.  ![](images/Image_NAR_3.png)
+
+4.  Enter the array name in the Textbox and click NAR Files button.  ![](images/Image_NAR_4.png)
     
-4.  Enter the array name as you have updated in the Array.txt file.
+5.  GUI will be closed and command window be open until the execution is completed.  ![](images/Image_NAR_5.png)
 
-5.  Click on "NAR Files" Button.
+6.  NAR files will start getting downloaded instantly to the same folder.   ![](images/Image_NAR_6.png)
 
-6.  NAR Files collection would start and you could see the NAR files are being copied to the directory.
-
-7.  Please try and raise issues if you face any difficulties.
+7.  After the completion command window will be closed and last 7 days (including present day) NAR files for both SPA and SPB will be found in the same folder.  ![](images/Image_NAR_7.png)
