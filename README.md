@@ -7,3 +7,4 @@
 
 This works with EMC VNX and Clariion Series.
 
+Steps to collect EMC SP collect using Unisphere is given in the below link <br /> https://community.emc.com/docs/DOC-10588
